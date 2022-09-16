@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <br.com.victor.customviews.CustomElement
+        android:id="@+id/custom_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:buttonOneTitle="Primeiro botão"
+        app:buttonTwoTitle="Segundo botão"
+        app:description="Descrição"
+        app:numberOfButtons="two"
+        app:subtitle="Subtítulo"
+        app:title="View com dois botões" />
+
+    <br.com.victor.customviews.CustomElement
+        android:id="@+id/custom_element_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:buttonOneTitle="Somente um botão"
+        app:numberOfButtons="one"
+        app:subtitle="Subtítulo"
+        app:title="View com um botão" />
+
+    <br.com.victor.customviews.CustomElement
+        android:id="@+id/custom_element_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:numberOfButtons="zero"
+        app:subtitle="Subtítulo"
+        app:title="View sem botões" />
+
+</LinearLayout>
